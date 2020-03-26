@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="listenerPackage.CustomListeners"/>
+  </listeners>
   <test name="Test(failed)">
     <classes>
-      <class name="annotationPackage.Depends">
+      <class name="listenerPackage.ListenerClass">
         <methods>
-          <include name="login"/>
-          <include name="register"/>
-          <include name="createNewUser"/>
+          <include name="openChrome"/>
+          <include name="loginTest"/>
         </methods>
-      </class> <!-- annotationPackage.Depends -->
+      </class> <!-- listenerPackage.ListenerClass -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
