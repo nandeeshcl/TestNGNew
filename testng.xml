@@ -4,7 +4,8 @@
   <test name="Test">
     <classes>
       <!-- <class name="annotationPackage.Annotations"/> -->
-      <class name="assertionPackage.Assertions"/>
+      <!-- <class name="assertionPackage.Assertions"/> -->
+      <class name="annotationPackage.Depends"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

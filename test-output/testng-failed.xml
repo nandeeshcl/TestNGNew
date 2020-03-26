@@ -3,11 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test name="Test(failed)">
     <classes>
-      <class name="assertionPackage.Assertions">
+      <class name="annotationPackage.Depends">
         <methods>
-          <include name="testA"/>
+          <include name="login"/>
+          <include name="register"/>
+          <include name="createNewUser"/>
         </methods>
-      </class> <!-- assertionPackage.Assertions -->
+      </class> <!-- annotationPackage.Depends -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
